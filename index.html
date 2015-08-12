@@ -1,32 +1,37 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="normalize.css">
     <style>
       body, html {
         height: 100vh;
         margin: 0;
         padding: 0;
+        display: block;
+      }
+      .container {
+        min-height: 100vh;
+        min-width: 100vw;
+        margin: 0;
+        padding: 0;
+        border: 0px none;
       }
       .layer {
         min-height: 100vh;
         min-width: 100vw;
-        margin: 0px;
-        border: 0px, none;
+        margin: 0;
+        border: 0px none;
         padding: 0px;
         left:0px;
         right:0px;
-        box-sizing:border-box;
-        -moz-box-sizing:border-box;
-        -webkit-box-sizing:border-box;
+        overflow: hidden;
       }
     </style>
   </head>
   <body>
-    <div>
-      <div class="layer" style="background-color:#A1D490; top:0vh;">
+    <div class="container">
+      <div class="layer" style="background-color:#A1D490;">
         <p>Um dia haverá aqui um site sobre o casamento da Clarissa e do Bruno.</p>
       </div>
-      <div  class="layer" style="background-color:#C390D4; top:100vh;">
+      <div  class="layer" style="background-color:#C390D4;">
         <p>Aqui também</p>
       </div>
      <div>
