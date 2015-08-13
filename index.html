@@ -26,12 +26,12 @@
         overflow: hidden;
       }
       .contentPanel {
-        background-image: url("arabescoDetai.jpg");
-        position: absolute;
+        background-image: url("arabescoDetail.jpg");
+        position: relative;
         min-height: 60%;
-        min-width: 60%;
+        max-width: 80%;
         margin: 0;
-        border: 5px outset #A1D590;
+        border: 1px outset #000000;
         padding: 0px;
         top:80px;
         bottom:80px;
@@ -43,13 +43,15 @@
   <body>
     <div class="container">
       <div class="layer" style="background-color:#A1D490;">
+        <a name="layer1"/>
          <div class="contentPanel">
-           <a name="layer1" href="#layer2">next</a>
+           <a href="#layer2">next</a>
          </div>
       </div>
       <div class="layer" style="background-color:#C390D4;">
-         <div class="contentPanel">
-           <a name="layer2" href="#layer1">previous</a>
+        <a name="layer2"/>
+        <div class="contentPanel">
+           <a href="#layer1">previous</a>
          </div>
       </div>
      </div>
