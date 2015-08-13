@@ -16,6 +16,7 @@
         border: 0px none;
       }
       .layer {
+        background-image: url("arabescoDetail.jpg");
         min-height: 100vh;
         min-width: 98vw;
         margin: 0;
@@ -26,32 +27,30 @@
         overflow: hidden;
       }
       .contentPanel {
-        background-image: url("arabescoDetail.jpg");
         position: relative;
-        min-height: 60%;
-        max-width: 80%;
+        min-height: 80%;
+        max-width: 100%;
         margin: 0;
-        border: 1px outset #000000;
+        border: 0px outset #000000;
         padding: 0px;
-        top:80px;
-        bottom:80px;
-        left:80px;
-        right:80px;
+        top: 10vh;
+        left: 0;
+        right: 0;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="layer" style="background-color:#A1D490;">
-        <a name="layer1"/>
-         <div class="contentPanel">
+      <a name="init"/>
+      <div class="layer">
+         <div class="contentPanel" style="background-color:#FFFFFF;">
            <a href="#layer2">next</a>
          </div>
       </div>
-      <div class="layer" style="background-color:#C390D4;">
+      <div class="layer" >
         <a name="layer2"/>
-        <div class="contentPanel">
-           <a href="#layer1">previous</a>
+        <div class="contentPanel" style="background-color:#000000;">
+           <a href="#init">previous</a>
          </div>
       </div>
      </div>
