@@ -1,7 +1,8 @@
 <html>
   <head>
+      <meta charset="UTF-8">
     <style>
-      @font-face {
+      @font-face { 
         font-family: ribbon;
         src: url(ribbons.tff);
       }
@@ -11,6 +12,10 @@
         padding: 0;
         display: block;
         overflow: hidden;
+      }
+      a {
+        color: #000000;
+        text-decoration: none;
       }
       .container {
         min-height: 100vh;
@@ -33,9 +38,9 @@
       .contentPanel {
         text-align: center;
         vertical-align: middle;
-        font-family:ribbon;
         font-size:xx-large;
         position: relative;
+        background-color: #FFFFFF;
         min-height: 80%;
         max-height: 80%;
         max-width: 100%;
@@ -46,19 +51,100 @@
         left: 0;
         right: 0;
       }
+      .menu {
+        padding: 20px;
+        max-width: 100%;
+        font-family: ribbon;
+        display: flex;
+        justify-content: space-between;
+      }
+      .leftPanel {
+      }
+      .resize {
+	   max-width: 20%;
+	   max-height:20%;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <a name="init"/>
+      <a name="init"></a>
       <div class="layer">
-         <div class="contentPanel" style="background-color:#FFFFFF;">
-           <p style="font-size:120px%">[C_l_a_r_i_s_s_a_ _e_ _B_r_u_n_o]</p>
+         <div class="contentPanel">
+           <div class="menu">
+               <a href="#init" style="color:#E9967A">      [I_n_í_c_i_o]</a>
+               <a href="#nos">                             [N_ó_s]</a>
+               <a href="#cerimonia">                       [C_e_r_i_m_ô_n_i_a]</a>
+               <a href="#recepcao">                        [R_e_c_e_p_ç_ã_o]</a>
+               <a href="#hospedagem">                      [H_o_s_p_e_d_a_g_e_m]</a>
+               <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
+           </div>
+           <div class="lefPanel"><img class="resize" src="imageInicio.jpg"/></div>
+        </div>
+      </div>
+      <a name="nos"></a>
+      <div class="layer">
+        <div class="contentPanel">
+            <div class="menu">
+               <a href="#init">                            [I_n_í_c_i_o]</a>
+               <a href="#nos" style="color:#E9967A">       [N_ó_s]</a>
+               <a href="#cerimonia">                       [C_e_r_i_m_ô_n_i_a]</a>
+               <a href="#recepcao">                        [R_e_c_e_p_ç_ã_o]</a>
+               <a href="#hospedagem">                      [H_o_s_p_e_d_a_g_e_m]</a>
+               <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
+           </div>
          </div>
       </div>
-      <div class="layer" >
-        <a name="layer2"/>
-        <div class="contentPanel" style="background-color:#000000;">
+      <a name="cerimonia"></a>
+      <div class="layer">
+        <div class="contentPanel">
+            <div class="menu">
+               <a href="#init">                            [I_n_í_c_i_o]</a>
+               <a href="#nos">                             [N_ó_s]</a>
+               <a href="#cerimonia" style="color:#E9967A"> [C_e_r_i_m_ô_n_i_a]</a>
+               <a href="#recepcao">                        [R_e_c_e_p_ç_ã_o]</a>
+               <a href="#hospedagem">                      [H_o_s_p_e_d_a_g_e_m]</a>
+               <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
+           </div>
+         </div>
+      </div>
+      <a name="recepcao"></a>
+      <div class="layer">
+        <div class="contentPanel">
+            <div class="menu">
+               <a href="#init">                            [I_n_í_c_i_o]</a>
+               <a href="#nos">                             [N_ó_s]</a>
+               <a href="#cerimonia">                       [C_e_r_i_m_ô_n_i_a]</a>
+               <a href="#recepcao" style="color:#E9967A">  [R_e_c_e_p_ç_ã_o]</a>
+               <a href="#hospedagem">                      [H_o_s_p_e_d_a_g_e_m]</a>
+               <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
+           </div>
+         </div>
+      </div>
+      <a name="hospedagem"></a>
+      <div class="layer">
+        <div class="contentPanel">
+            <div class="menu">
+               <a href="#init">                            [I_n_í_c_i_o]</a>
+               <a href="#nos">                             [N_ó_s]</a>
+               <a href="#cerimonia">                       [C_e_r_i_m_ô_n_i_a]</a>
+               <a href="#recepcao">                        [R_e_c_e_p_ç_ã_o]</a>
+               <a href="#hospedagem" style="color:#E9967A">[H_o_s_p_e_d_a_g_e_m]</a>
+               <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
+           </div>
+         </div>
+      </div>
+      <a name="presentes"></a>
+      <div class="layer">
+        <div class="contentPanel">
+            <div class="menu">
+               <a href="#init">                            [I_n_í_c_i_o]</a>
+               <a href="#nos">                             [N_ó_s]</a>
+               <a href="#cerimonia">                       [C_e_r_i_m_ô_n_i_a]</a>
+               <a href="#recepcao">                        [R_e_c_e_p_ç_ã_o]</a>
+               <a href="#hospedagem">                      [H_o_s_p_e_d_a_g_e_m]</a>
+               <a href="#presentes" style="color:#E9967A"> [P_r_e_s_e_n_t_e_s]</a>
+           </div>
          </div>
       </div>
      </div>
