@@ -1,5 +1,11 @@
 <html>
   <head>
+	<script>
+	function goToTop() {
+ 	 window.location=document.getElementById('init');
+	}
+	</script>
+
     <meta charset="UTF-8">
     <title>C&B</title>
     <link rel="shortcut icon" href="icon.ico">
@@ -8,6 +14,10 @@
         font-family: ribbon;
         src: url(ribbons.tff);
       }
+      @font-face {
+		  font-family: 'Roboto';
+		  src: local('Roboto'), local('Roboto-Regular'), url(roboto.woff2) format('woff2');
+	  }
       body, html {
         height: 100vh;
         margin: 0;
@@ -40,7 +50,7 @@
       .contentPanel {
         text-align: center;
         vertical-align: middle;
-        font-size:xx-large;
+        font: 400 24px/32px Roboto,sans-serif;
         position: relative;
         background-color: #FFFFFF;
         min-height: 80%;
@@ -56,6 +66,7 @@
       .menu {
         padding: 20px;
         max-width: 100%;
+        font-size: xx-large;
         font-family: ribbon;
         display: flex;
         justify-content: space-between;
@@ -67,9 +78,9 @@
       }
     </style>
   </head>
-  <body>
+  <body onresize="goToTop()">
     <div class="container">
-      <a name="init"></a>
+      <a id="init" name="init"></a>
       <div class="layer">
          <div class="contentPanel">
            <div class="menu">
