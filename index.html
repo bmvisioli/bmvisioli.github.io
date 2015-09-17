@@ -1,14 +1,13 @@
 <html>
   <head>
+    <meta charset="UTF-8"/>
+    <title>C&amp;B</title>
+    <link rel="shortcut icon" href="icon.ico"/>
 	<script>
-	function goToTop() {
- 	 window.location=document.getElementById('init');
-	}
+		function goToTop() {
+	 	 window.location=document.getElementById('init');
+		}
 	</script>
-
-    <meta charset="UTF-8">
-    <title>C&B</title>
-    <link rel="shortcut icon" href="icon.ico">
     <style>
       @font-face { 
         font-family: ribbon;
@@ -46,11 +45,12 @@
         left:0px;
         right:0px;
         overflow: hidden;
+        max-height: 100%;
       }
       .contentPanel {
-		text-align: justify;
+        overflow:hidden;
+		    text-align: justify;
         vertical-align: middle;
-        font: 400 14px/32px Roboto,sans-serif;
         position: relative;
         background-color: #FFFFFF;
         min-height: 80%;
@@ -71,10 +71,27 @@
         display: flex;
         justify-content: space-between;
       }
+      .leftPanel {
+        float:left;
+        width:40%;
+        overflow:hidden;
+      }
+      .rightPanel {
+        float:left;
+        width:60%;
+        overflow:hidden;
+        text-align:center;
+      }
       .imgInicio {
-       padding-top: 30px;
-	   max-width: 80%;
-	   max-height:60%;
+        padding-top: 30px;
+    	  max-width: 80%;
+    	  max-height: 60%;
+      }
+      .textBox {
+        overflow-y: auto;
+        font: 400 14px/32px Roboto,sans-serif;
+        padding-left: 20px;
+        max-height: 60%;
       }
     </style>
   </head>
@@ -106,11 +123,64 @@
                <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
            </div>
            <div>
-             <div style="float:left;width:50%;overflow:hidden;">
+             <div class="leftPanel">
            	  <img class="imgNos" src="imgNos.png" style="width:100%" />
              </div>
-             <div style="float:left;width:50%;overflow:hidden;">
-           	  Texto mutcho loco
+             <div class="rightPanel">
+              <div class="textBox">
+                <h1>A primeira vista</h1>
+
+                <p>Na noite de 22 de junho de 2007, fomos apresentados por amigos em comum quando 
+                estávamos em um boliche em Caxias do Sul. O Bruno já morava em Porto Alegre e tinha recém 
+                ingressado na faculdade de TI ; enquanto que a Clarissa finalizava o segundo grau no CETEC. A 
+                noite terminou na casa de um amigo, onde aconteceu o nossso primeiro beijo.
+                Para o nosso primeiro encontro, em 27 de julho, escolhemos ir ao cinema, onde  assistimos o 
+                filme brasileiro “ O Cheiro do Ralo” . Coração disparando pedia mais encontros! E eles vieram! 
+                Um dos locais preferidos para nos vermos  era um café com música ao vivo, onde, 7 anos 
+                depois,  aconteceu o pedido de casamento.</p>
+
+                <h1>O namoro</h1>
+
+                <p>Decidimos oficializar nosso namoro na madrugada de 3 de novembro de 2007, numa festa na 
+                chácara de uma amiga. Uma longa conversa confirmou nosso desejo de estarmos juntos e 
+                comprometidos com o relacionamento. E assim começou nosso  ”era uma vez...”</p>
+
+                <h1>As alianças</h1>
+
+                <h2>O brilho da prata</h2>
+
+                <p>A primeira aliança que nos damos foi de prata e representava o compromisso assumido como 
+                namorados que queriam manter e fortalecer um grande amor.  O Bruno surpreendeu a 
+                Clarissa no dia dos namorados  de 2008, em um local que eles adoravam, com uma  bela vista 
+                da cidade. Bruno buscou a Clarissa sua em casa para celebrarem o dia dos namorados em um 
+                restaurante, mas fez uma pausa antes para entregar-lhe as alianças. No carro, Bruno ofereceu-
+                lhe uma caixa de bis, embora ela não quisesse, ele insistiu e, após 2 ou 3 chocolates, ali estava 
+                a aliança de prata pedindo bis.  Ufa que sufoco... quase que a Clarissa perde a chance!</p>
+
+                <h2>Era dourada</h2>
+
+                <p>Em março, os dois aniversariam. Clarissa pensou que seria uma otima oportunidade para 
+                noivarem. É mas pelo jeito o Bruno   não  pensava igual. No aniver dela em marco de 2015, 
+                após 7 anos de namoro, Clarissa  achou que seria pedida em casamento. Pelo visto ainda não 
+                havia chegado a hora. A decepcao foi grande .
+                No dia seguinte, o casal saiu para tomar um café no lugar que tem muito significadotanto  para 
+                eles. Chegando lá, o Bruno voltou ao carro, para conferir se o tinha trancado e voltou com um 
+                lindo bouquet de flores nas maõs. O coração da Clarissa se encheu de alegria e ficou ainda 
+                mais surpresa, quando Bruno ajoelhou-se  diante dela e, nervoso , tirou uma caixinha do bolso 
+                . Ufa, o que seria? Alguém tem um palpite?  Isso mesmo a tão esperada aliança de noivado. 
+                A alegria do casal contagiava os amigos e os pais, que celebraram com eles mais esse passo na 
+                vida a dois.</p>
+
+                <h1>Os planos</h1>
+
+                <p>Desde o início do namoro, foram muitas conquistas juntos: tanto profissionais, quanto 
+                pessoais. Ambos cresceram e aprenderam a se prepaparem para realizarem seus sonhos.  
+                Atualmente,  os planos são: unirem-se em matrimônio e, após,  viajarem pela europa na 
+                expectativa de lá virem a residirem,  trabalharem e estudarem . Será o início de um casamento 
+                que queremos seja eterno, afinal o principal  temos de sobra: amor! E isso pode garantir que o 
+                final da história termine com “ ...e viveram felizes para sempre”.
+                Ficamos felizes em termos pessoas como vocês participando das nossas vidas!</p>
+              </div>
              </div>
            </div>
          </div>
@@ -127,13 +197,15 @@
                <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
            </div>
            <div>
-             <div style="float:left;width:40%;overflow:hidden;">
-             	A cerimônia religiosa se dará na capela Santa Francisca Xavier Cabrini anexa ao Campus 8 da UCS, as 18:30 do dia 28 de Novembro de 2015. O complexo fica às margens do km 69 da RS-122, no sentido Caxias do Sul a Farroupilha.
-             	<br/>
-             	<br/>
-				<a href="https://goo.gl/maps/wgAFL">Clique aqui parar abrir no Google Maps</a>
+             <div class="leftPanel">
+             	<div class="textBox">
+                A cerimônia religiosa se dará na capela Santa Francisca Xavier Cabrini anexa ao Campus 8 da UCS, as 18:30 do dia 28 de Novembro de 2015. O complexo fica às margens do km 69 da RS-122, no sentido Caxias do Sul a Farroupilha.
+                <br/>
+                <br/>
+                <a href="https://goo.gl/maps/wgAFL">Clique aqui parar abrir no Google Maps</a>
+              </div>
              </div>
-             <div style="float:left;width:60%;overflow:hidden;text-align:center;">
+             <div class="rightPanel">
            	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d885.882239946617!2d-51.25813184580158!3d-29.191973264732287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x9c8a7a0f2ef7f36e!2sUniversidade+de+Caxias+do+Sul+-+Centro+de+Artes+e+Arquitetura!5e1!3m2!1sen!2sbr!4v1442410449263" width="80%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
              </div>
            </div>
@@ -151,17 +223,19 @@
                <a href="#presentes">                       [P_r_e_s_e_n_t_e_s]</a>
            </div>
          <div>
-	         <div style="float:left;width:40%;overflow:hidden;">
-	         	Após a cerimônia religiosa os convidados serão recepcionados no salão da Vinícola Perini, em Farroupilha. O acesso se dá pelo distrito de Forqueta, seguindo até a comunidade Santos Anjos.
-	         	<br/>
-             	<br/>
-				<a href="https://goo.gl/maps/QNdxp">Clique aqui parar abrir no Google Maps</a>
+	         <div class="leftPanel">
+	         	<div class="textBox">
+              Após a cerimônia religiosa os convidados serão recepcionados no salão da Vinícola Perini, em Farroupilha. O acesso se dá pelo distrito de Forqueta, seguindo até a localidade Santos Anjos.
+              <br/>
+              <br/>
+              <a href="https://goo.gl/maps/QNdxp">Clique aqui parar abrir no Google Maps</a>
+            </div>
 	         </div>
-	         <div style="float:left;width:60%;overflow:hidden;text-align:center;">
+	         <div class="rightPanel">
 		        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6656.206109449021!2d-51.287088468820535!3d-29.254019832886993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0xaa67a2629b5a3466!2sVin%C3%ADcola+Perini!5e1!3m2!1sen!2sbr!4v1442412724179" width="80%" height="70%" frameborder="0" style="border:0" allowfullscreen></iframe>
 	         </div>
+	       </div>
 	     </div>
-	   </div>
       </div>
       <a name="hospedagem"></a>
       <div class="layer">
